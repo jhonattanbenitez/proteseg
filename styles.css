@@ -1,0 +1,73 @@
+html{
+    font-family: 'Nunito Sans', sans-serif;
+}
+body {
+    text-rendering: optimizeLegibility;
+    line-height: 1.5;
+}
+.navbar{
+    padding: 1.5rem;
+}
+.nav-link{
+    color: white;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color:white;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.nosotros{
+    height: 500px;
+    padding: 60px;
+    display: flex;
+    justify-content: space-around;
+    background-image: url("/img/backgrounds/fondo-nosotros-inicio.png");
+}
+.nosotros-texto-logo{
+    width: 420px;
+}
+.servicios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/img/backgrounds/Fondo-servicios.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h2{
+    text-align: center;
+    color: white;
+    padding: 4rem;
+    font-weight: bold;
+}
+.img-servicio{
+    align-self: center;
+}
+.container-politica{
+    display: flex;
+    height: 400px;
+    height: 190px;
+    flex-direction: column;
+}
+.politicas{
+    background-image: url(/img/backgrounds/politicas-de-calidad.png);
+    height: 400px;
+}
+.titulo-politica{
+    display: flex;
+    align-items: stretch;
+    
+}
+.titulo-politica img{
+    width: 40px;
+    height: 40px;
+}
+.politicas div p{
+    color: white;
+    width: 379px;
+    height: 106px;
+    padding: 4rem;
+}
