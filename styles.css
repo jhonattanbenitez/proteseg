@@ -2,8 +2,10 @@ html{
     font-family: 'Nunito Sans', sans-serif;
 }
 body {
+    padding-top: 88px;
     text-rendering: optimizeLegibility;
     line-height: 1.5;
+    font-family: 'Nunito Sans', sans-serif;
 }
 .navbar{
     padding: 1.5rem;
@@ -20,14 +22,31 @@ body {
     font-weight: bold;
 }
 .nosotros{
-    height: 500px;
+    height: 513px;
+    width: auto;
     padding: 60px;
     display: flex;
     justify-content: space-around;
     background-image: url("/img/backgrounds/fondo-nosotros-inicio.png");
 }
+.img-nosotros{
+    width: 540px;
+    height: 379px;
+}
 .nosotros-texto-logo{
-    width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 540px;
+    height: 379px;
+}
+.title-proteseg{
+    align-self: flex-start;
+    margin-bottom: 1rem;
+}
+.texto-nosotros{
+    font-size: 16pt;
+    font-weight: 500;
 }
 .servicios{
     display: flex;
@@ -43,31 +62,103 @@ h2{
     padding: 4rem;
     font-weight: bold;
 }
-.img-servicio{
-    align-self: center;
-}
-.container-politica{
-    display: flex;
-    height: 400px;
-    height: 190px;
-    flex-direction: column;
-}
+
+
 .politicas{
+    display: flex;
     background-image: url(/img/backgrounds/politicas-de-calidad.png);
     height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.titulo-politica{
+
+.like{
+    height: 30px;
+    width: 30px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+.titulo-politica-de-calidad{
     display: flex;
-    align-items: stretch;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo-politica img{
+    width: 50px;
+    height: 50px;
     
 }
-.titulo-politica img{
-    width: 40px;
-    height: 40px;
+.texto-politica{
+    width: 500px;
+   
 }
-.politicas div p{
+
+.left-half {
+    
+    flex: 1;
+    padding: 7rem;
     color: white;
-    width: 379px;
-    height: 106px;
-    padding: 4rem;
+    align-content: center;
+  }
+  
+  .right-half {
+    flex: 1;
+    padding: 1rem;
+  }
+h3{
+    font-weight: bold;
+}
+.contactenos{
+    display: flex;
+    
+}
+.left-half-contact {
+    
+    flex: 1;
+    padding: 7rem;
+    color: black;
+    flex-direction: column;
+    
+  }
+ .fa-mobile-alt{ 
+     color: #EF8532;
+ }
+ .icono{
+     width: 30px;
+     margin-right: 1rem;
+     margin-bottom: 1rem;
+ }
+ footer{
+     display: flex;
+    background-color: #393A3B;
+    height: 180px;
+ }
+ .left-side-footer{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+
+ }
+ .right-side-footer{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+ }
+ .span-footer{
+    color: white;
+    margin-right: 1rem;
+ }
+a{
+    text-decoration: none;
+    color: white;
+}
+.logo-footer{
+    margin-bottom: 1.5rem;
 }
