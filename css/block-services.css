@@ -1,0 +1,21 @@
+.img-block{
+    flex: 1;
+    max-height: 304px;
+    max-width: 500px;
+    flex-direction: column;
+   
+    
+}
+.text-block-servicios{
+    flex: 1;
+    width: 500px;
+    height: 304px;
+    align-self: flex-start;
+}
+.left{
+    padding-left: 75px;
+   
+}
+h4{
+    color: #EF8532;
+}
