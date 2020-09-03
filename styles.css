@@ -21,6 +21,19 @@ body {
     font-size: 0.9em;
     font-weight: bold;
 }
+.text-block {
+    position: absolute;
+    top: 202px;
+    left: 200px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 444px;
+    font-size: 22px;
+  }
+  .ver-mas{
+      border-radius: 16px;
+  }
 .nosotros{
     height: 513px;
     width: auto;
@@ -111,18 +124,36 @@ h3{
 }
 .contactenos{
     display: flex;
-    
+    justify-content: space-evenly;
 }
 .left-half-contact {
-    
+    padding: 1rem;
     flex: 1;
-    padding: 7rem;
     color: black;
+    max-width: 368px;
     flex-direction: column;
     
   }
+  .right-half-contact{
+    flex: 1;
+    padding: 1rem;
+    max-width: 368px;
+    align-self: flex-start;
+  }
+  h3{
+      color: #EF8532;
+      margin-bottom: 1rem;
+  }
+  .btn-primary{
+      background-color: #EF8532;
+      border: #707070;
+  }
+  .btn-primary:hover{
+      background-color: #707070;
+  }
  .fa-mobile-alt{ 
      color: #EF8532;
+  
  }
  .icono{
      width: 30px;

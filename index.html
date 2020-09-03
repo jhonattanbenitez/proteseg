@@ -5,9 +5,11 @@
   <script src="https://kit.fontawesome.com/9b9126d124.js" crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <title>Proteseg</title>
 </head>
@@ -52,12 +54,15 @@
   <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active" data-interval="10000">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Texto</h5>
-          <p>...</p>
-          <button>Ver más</button>
+        
+          <div class="text-block animate__animated animate__fadeInDownBig">
+            <h4>Seguro estás protegido</h4><br>
+            <p>En Proteseg, te brindamos la oportunidad de estar vigente, desarrollando habilidades y competencias necesarias para estar preparado en caso de una urgencia o emergencia.</p>
+            <button class="btn btn-primary ver-mas">Ver más</button>
+      
         </div>
         <img src="/img/banners/Banner-1.png" class="d-block w-100" alt="banner de presentación de seguridad">
+        
       </div>
 
       <div class="carousel-item" data-interval="2000">
@@ -77,7 +82,7 @@
     </a>
   </div>
   <section class="nosotros">
-    <div class="img-nosotros">
+    <div class="img-nosotros"  data-aos="zoom-in">
       <img src="/img/politica-de-calidad.png" alt="políticas de politica-de-calidad">
     </div>
     <div class="nosotros-texto-logo">
@@ -117,7 +122,7 @@
   </section>
   <section class="contactenos">
     <div class="left-half-contact">
-      <article>
+      <div class="contacto">
         <h3>Contáctanos</h3>
         <div>
           <img src="/img/Trazado 65.png" alt="" class="icono"><span>+57 310 514 0000</span><br>
@@ -125,9 +130,22 @@
           <img src="/img/Trazado 62.png" alt="" class="icono"><span>@grupoproteseg</span>
 
         </div>
-      </article>
+      </div>
     </div>
-    <div class="right-half">
+    <div class="right-half-contact">
+      <form method="POST" action="enviar.php">
+        <h3>Escríbenos</h3>
+        <div class="form-group">
+          <input type="text" name="nombre" class="form-control name-field" id="exampleFormControlInput1" placeholder="Nombre" required="required">
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com" required="required">
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" name="mensaje" id="exampleFormControlTextarea1" required="required" rows="3" placeholder="Mensaje"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
 
     </div>
   </section>
@@ -153,6 +171,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
